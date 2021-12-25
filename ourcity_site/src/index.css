@@ -167,21 +167,20 @@ figure figcaption h3 {
 }
 
 #about {
-  margin-bottom: 11%;
+  margin-bottom: 2%;
 }
 
 #mission {
-  margin-top: 11%;
-  margin-bottom: 11%;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 #video {
-  margin-top: 11%;
+  margin-top: 5%;
 }
 
 #download {
   margin-top: 11%;
-  margin-bottom: 11%;
 }
 
 #instadown {
@@ -191,6 +190,11 @@ figure figcaption h3 {
 }
 
 #faqtitle {
-  margin-top: 11%;
+  margin-bottom: 2%;
+}
+
+#afterDownload {
+  font-size: 20px;
+  margin-top: 2%;
   margin-bottom: 11%;
 }
