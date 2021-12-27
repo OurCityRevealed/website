@@ -57,7 +57,7 @@ export default function Download() {
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="text-center">
+                        <div class="text-center download">
                             <h4>Incredible detail and service</h4>
                             <p>We've got your back. In the event something does come up, our team is here to help make sure
                                 your trip is not interrupted.

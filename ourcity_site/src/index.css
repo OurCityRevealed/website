@@ -95,6 +95,10 @@ section .row img {
   margin: 0 13% 10%;
 }
 
+.text-center.download {
+  margin: 0 13% 200px;
+}
+
 .text-center img {
   max-width: 28%;
   height: auto;
