@@ -6,9 +6,6 @@ const database = require('firebase/database');
 // You web app's Firebase configuration
 const firebaseConfig = require('../../config/firebaseConfig.json');
 
-// Need to input this
-firebaseConfig.databaseURL = '';
-
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const db = database.getDatabase(app);
