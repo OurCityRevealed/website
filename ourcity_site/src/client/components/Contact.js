@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Contact() {
+    const [status, setStatus] = useState("Submit");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus("Sending...");
+        
+        const { name, email, message } = e.target.elements;
+        
+        let details = {
+            name: name.value,
+            email: email.value,
+            message: message.value,
+        };
+
+        let response = await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(details),
+        });
+
+        setStatus("Submit");
+        let result = await response.json();
+        alert(result.status);
+    };
+
     return (
         <>
             <header className="container">
@@ -19,69 +46,26 @@ export default function Contact() {
             <section class="container">
                 <div class="row">
                     <div class="text-center">
-                        <h1 id="about">Contact Page</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <figure class="col-sm-4">
-                        <img src="images/cynthia-magana-mFPJXEQfb9M-unsplash.jpg" alt="firstImage"></img>
-                            <figcaption>
-                                <h3>Creating Unique Connections</h3>
-                                <p>Unlike our competitors, Our City focuses on the connections that its users get from the community they are in.</p>
-                            </figcaption>
-                    </figure>
-                    <figure class="col-sm-4">
-                        <img src="images/airam-dato-on-MqhMij7C_CE-unsplash.jpg" alt="firstImage"></img>
-                            <figcaption>
-                                <h3>We are based out of Asheville, North Carolina</h3>
-                                <p>With our roots based in Asheville North Carolina, we saw first hand the effect of tourism and its
-                                    misrepresentation of our city.
-                                </p>
-                                <p>To visitors, Asheville is an enchanting mountain town with the Biltmore and brewery tours on the top
-                                    of many peoples must do's while visitng.
-                                </p>
-                                <p>To locals, Asheville is a stunning display of natural and man-made beauty that is more than just tourist
-                                    traps and beer tours. Most of all, the people that call Asheville home are what makes the city one of a kind.
-                                </p>
-                            </figcaption>
-                    </figure>
-                    <figure class="col-sm-4">
-                        <img src="images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="firstImage"></img>
-                            <figcaption>
-                                <h3>We are currently in development of the service!</h3>
-                                <p>Right now we are in the testing phase of the concept and would love your feedback!</p>
-                                <p>If you are interested in becoming part of the project, drop us a line!</p>
-                            </figcaption>
-                    </figure>
-                </div>
-                <div class="row">
-                    <div class="text-center">
-                        <h1 id="mission">Our Mission</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="text-center">
-                            <h3>The Problem</h3>
-                            <p>Our mission is to provide a solution to the problem faced by weekend warriors and vacationing families alike.
-                                This problem, the disconnection between the locals of a community and its visitors is what we are setting out to solve.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="text-center">
-                            <h3>Breaking Through the Facade</h3>
-                            <p>Our mission is to expose visitors to the community behind the tourist facade and to engage them in unique experiences
-                                that only a local would be able to provide. We want to show you our community through the eyes of a local.
-                            </p>
-                        </div>
+                        <h1 id="about">Contact Us</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="text-center">
-                        <h1 id="video">Video</h1>
-                        <p>We have not began development of this video yet!</p>
-                        <p>COMING SOON!</p>
+                        <form id="contact_form" onSubmit={handleSubmit}>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" id="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">{status}</button>
+                        </form>
                     </div>
                 </div>
                 <div class="row">
