@@ -46,7 +46,7 @@ export default function Contact() {
             <section class="container">
                 <div class="row">
                     <div class="text-center">
-                        <h1 id="about">Contact Us</h1>
+                        <h1 id="contact">Contact Us</h1>
                     </div>
                 </div>
                 <div class="row">
