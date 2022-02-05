@@ -19,69 +19,33 @@ export default function Faq() {
             <section class="container">
                 <div class="row">
                     <div class="text-center">
-                        <h1 id="about">FAQ Page</h1>
+                        <h1 id="faqtitle">Frequently Asked Questions</h1>
                     </div>
                 </div>
                 <div class="row">
-                    <figure class="col-sm-4">
-                        <img src="images/cynthia-magana-mFPJXEQfb9M-unsplash.jpg" alt="firstImage"></img>
-                            <figcaption>
-                                <h3>Creating Unique Connections</h3>
-                                <p>Unlike our competitors, Our City focuses on the connections that its users get from the community they are in.</p>
-                            </figcaption>
-                    </figure>
-                    <figure class="col-sm-4">
-                        <img src="images/airam-dato-on-MqhMij7C_CE-unsplash.jpg" alt="firstImage"></img>
-                            <figcaption>
-                                <h3>We are based out of Asheville, North Carolina</h3>
-                                <p>With our roots based in Asheville North Carolina, we saw first hand the effect of tourism and its
-                                    misrepresentation of our city.
-                                </p>
-                                <p>To visitors, Asheville is an enchanting mountain town with the Biltmore and brewery tours on the top
-                                    of many peoples must do's while visitng.
-                                </p>
-                                <p>To locals, Asheville is a stunning display of natural and man-made beauty that is more than just tourist
-                                    traps and beer tours. Most of all, the people that call Asheville home are what makes the city one of a kind.
-                                </p>
-                            </figcaption>
-                    </figure>
-                    <figure class="col-sm-4">
-                        <img src="images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="firstImage"></img>
-                            <figcaption>
-                                <h3>We are currently in development of the service!</h3>
-                                <p>Right now we are in the testing phase of the concept and would love your feedback!</p>
-                                <p>If you are interested in becoming part of the project, drop us a line!</p>
-                            </figcaption>
-                    </figure>
-                </div>
-                <div class="row">
-                    <div class="text-center">
-                        <h1 id="mission">Our Mission</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="text-center">
-                            <h3>The Problem</h3>
-                            <p>Our mission is to provide a solution to the problem faced by weekend warriors and vacationing families alike.
-                                This problem, the disconnection between the locals of a community and its visitors is what we are setting out to solve.
+                            <h4>Why should I use your app?</h4>
+                            <p>Our app has been created to foster unique and real connections between you and the world around you.
+                                Our app takes the guess work out of trying to find the best places to go while your visiting
+                                a location and makes your entire experience at that location even better!
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="text-center">
-                            <h3>Breaking Through the Facade</h3>
-                            <p>Our mission is to expose visitors to the community behind the tourist facade and to engage them in unique experiences
-                                that only a local would be able to provide. We want to show you our community through the eyes of a local.
+                            <h4>What services do you offer?</h4>
+                            <p>We offer you the ability to create a genuine connection with the location you are visitng and it's
+                                people!
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="text-center">
-                        <h1 id="video">Video</h1>
-                        <p>We have not began development of this video yet!</p>
-                        <p>COMING SOON!</p>
+                    <div class="col-sm-4">
+                        <div class="text-center">
+                            <h4>Are there any fees?</h4>
+                            <p>Right now we are offering the app free of charge to anyone interested in taking it for a spin!
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
