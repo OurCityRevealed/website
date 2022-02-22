@@ -95,6 +95,10 @@ section .row img {
   margin: 0 13% 10%;
 }
 
+.text-center.download {
+  margin: 0 13% 200px;
+}
+
 .text-center img {
   max-width: 28%;
   height: auto;
@@ -109,18 +113,19 @@ section .row img {
   font-size: 25px;
 }
 
-#name {
+/* #name {
   font-weight: 700;
   font-size: 25px;
-}
+} */
 
 .btn.btn-primary {
   border-radius: 2px;
-  width: 8vw;
+  width: 10vw;
   color: #000000;
   text-shadow: none;
   background-color: transparent;
   border: 2px solid #000000;
+  text-align: center;
 }
 
 .btn.btn-primary:hover {
@@ -167,21 +172,24 @@ figure figcaption h3 {
 }
 
 #about {
-  margin-bottom: 11%;
+  margin-bottom: 2%;
+}
+
+#contact {
+  margin-bottom: 2%;
 }
 
 #mission {
-  margin-top: 11%;
-  margin-bottom: 11%;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 #video {
-  margin-top: 11%;
+  margin-top: 5%;
 }
 
 #download {
   margin-top: 11%;
-  margin-bottom: 11%;
 }
 
 #instadown {
@@ -191,6 +199,33 @@ figure figcaption h3 {
 }
 
 #faqtitle {
-  margin-top: 11%;
+  margin-bottom: 2%;
+}
+
+#afterDownload {
+  font-size: 20px;
+  margin-top: 2%;
+  margin-bottom: 11%;
+}
+
+#name {
+  font-size: 16px;
+  margin-bottom: 6%;
+}
+
+#email {
+  font-size: 16px;
+  margin-bottom: 6%;
+}
+
+#message {
+  font-size: 16px;
+  margin-bottom: 6%;
+}
+
+#contact_form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
   margin-bottom: 11%;
 }

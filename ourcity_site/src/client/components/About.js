@@ -26,7 +26,7 @@ export default function About() {
                     <figure class="col-sm-4">
                         <img src="images/cynthia-magana-mFPJXEQfb9M-unsplash.jpg" alt="firstImage"></img>
                             <figcaption>
-                                <h3>Creating Unique Connections</h3>
+                                <h3>Creating Unique Connections Between You and the World</h3>
                                 <p>Unlike our competitors, Our City focuses on the connections that its users get from the community they are in.</p>
                             </figcaption>
                     </figure>

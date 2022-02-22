@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Download() {
+    // Set state for the download links
+    
+
+    const [downloadLink, setDownloadLink] = useState("Download Here!");
+
+    const [downloadResp, setDownloadResp] = useState("");
+
+    const handleDownload = (e) => {
+        // Send put request to increment download count
+        fetch('/api/download/count', {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+    };
+
     return (
         <>
             <header className="container">
@@ -18,70 +35,34 @@ export default function Download() {
             </header>
             <section class="container">
                 <div class="row">
+                    {/* Add button to increment on server */}
                     <div class="text-center">
-                        <h1 id="about">Download Page</h1>
+                        <h1 id="download" onClick={() => { setDownloadLink("Thank you for your interest!"); setDownloadResp("We are still in development, but your interest means alot to the team!"); handleDownload()}}>{downloadLink}</h1>
+                        <h3 id="afterDownload">{downloadResp}</h3>
                     </div>
                 </div>
                 <div class="row">
-                    <figure class="col-sm-4">
-                        <img src="images/cynthia-magana-mFPJXEQfb9M-unsplash.jpg" alt="firstImage"></img>
-                            <figcaption>
-                                <h3>Creating Unique Connections</h3>
-                                <p>Unlike our competitors, Our City focuses on the connections that its users get from the community they are in.</p>
-                            </figcaption>
-                    </figure>
-                    <figure class="col-sm-4">
-                        <img src="images/airam-dato-on-MqhMij7C_CE-unsplash.jpg" alt="firstImage"></img>
-                            <figcaption>
-                                <h3>We are based out of Asheville, North Carolina</h3>
-                                <p>With our roots based in Asheville North Carolina, we saw first hand the effect of tourism and its
-                                    misrepresentation of our city.
-                                </p>
-                                <p>To visitors, Asheville is an enchanting mountain town with the Biltmore and brewery tours on the top
-                                    of many peoples must do's while visitng.
-                                </p>
-                                <p>To locals, Asheville is a stunning display of natural and man-made beauty that is more than just tourist
-                                    traps and beer tours. Most of all, the people that call Asheville home are what makes the city one of a kind.
-                                </p>
-                            </figcaption>
-                    </figure>
-                    <figure class="col-sm-4">
-                        <img src="images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="firstImage"></img>
-                            <figcaption>
-                                <h3>We are currently in development of the service!</h3>
-                                <p>Right now we are in the testing phase of the concept and would love your feedback!</p>
-                                <p>If you are interested in becoming part of the project, drop us a line!</p>
-                            </figcaption>
-                    </figure>
-                </div>
-                <div class="row">
-                    <div class="text-center">
-                        <h1 id="mission">Our Mission</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <div class="text-center">
-                            <h3>The Problem</h3>
-                            <p>Our mission is to provide a solution to the problem faced by weekend warriors and vacationing families alike.
-                                This problem, the disconnection between the locals of a community and its visitors is what we are setting out to solve.
+                            <h4>Unique life experiences</h4>
+                            <p>We specialize in fostering once in a lifetime experiences that will create lasting memories.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-center">
+                            <h4>Personalized trips</h4>
+                            <p>Want to find someone to go exploring with you? Need to find a place to go for dinner?
+                                Open Our City to find a local to help!
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="text-center">
-                            <h3>Breaking Through the Facade</h3>
-                            <p>Our mission is to expose visitors to the community behind the tourist facade and to engage them in unique experiences
-                                that only a local would be able to provide. We want to show you our community through the eyes of a local.
+                    <div class="col-sm-4">
+                        <div class="text-center download">
+                            <h4>Incredible detail and service</h4>
+                            <p>We've got your back. In the event something does come up, our team is here to help make sure
+                                your trip is not interrupted.
                             </p>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="text-center">
-                        <h1 id="video">Video</h1>
-                        <p>We have not began development of this video yet!</p>
-                        <p>COMING SOON!</p>
                     </div>
                 </div>
                 <div class="row">
