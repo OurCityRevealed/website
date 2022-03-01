@@ -33,7 +33,7 @@ header nav {
 }
 
 header p {
-  padding: 0 20px;
+  padding: 1vh 1.7vw;
   margin: 0;
 }
 
@@ -120,7 +120,7 @@ section .row img {
 
 .btn.btn-primary {
   border-radius: 2px;
-  width: 10vw;
+  width: calc(10% + 10vw);
   color: #000000;
   text-shadow: none;
   background-color: transparent;
@@ -137,6 +137,10 @@ section .row img {
   background-color: #E8DFE0;
   color: #ffffff;
   margin: 0 0 30px;
+}
+
+.text-responsive {
+  font-size: calc(60% + .5vw);
 }
 
 footer {
