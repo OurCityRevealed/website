@@ -28,7 +28,7 @@ export default function Home() {
             <section class="container">
                 <div class="row">
                     <figure class="col-sm-6 support">
-                        <img src="images/kevin-clarke-85IOEMNkxw0-unsplash.jpg" alt="connected city"></img>
+                        <img src="images/kevin-clarke-85IOEMNkxw0-unsplash.webp" alt="connected city"></img>
                     </figure>
                     <div class="col-sm-6 supporttext">
                         <p>Hi,</p>
@@ -40,7 +40,7 @@ export default function Home() {
                     <div class="text-center">
                         <h3>Meet the Team</h3>
                         <h4>Founder/CEO</h4>
-                        <img src="images/Profile_Picture.jpg" alt="profile"></img>
+                        <img src="images/Profile_Picture.webp" alt="profile"></img>
                         <p>Hi! My name is Travis Walter, founder of Our City. I am originally from Asheville, North Carolina, but currently live in Raleigh, North Carolina. I have a background in software engineering and obtained my bachelor's degree in Computer Science from North Carolina State University in 2021, which has allowed me to explore my passions. Welcome to Our City!</p>
                     </div>
                 </div>

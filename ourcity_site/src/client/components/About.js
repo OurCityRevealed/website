@@ -24,14 +24,14 @@ export default function About() {
                 </div>
                 <div class="row">
                     <figure class="col-sm-4">
-                        <img src="images/cynthia-magana-mFPJXEQfb9M-unsplash.jpg" alt="firstImage"></img>
+                        <img src="images/cynthia-magana-mFPJXEQfb9M-unsplash.webp" alt="firstImage"></img>
                             <figcaption>
                                 <h3>Creating Unique Connections Between You and the World</h3>
                                 <p>Unlike our competitors, Our City focuses on the connections that its users get from the community they are in.</p>
                             </figcaption>
                     </figure>
                     <figure class="col-sm-4">
-                        <img src="images/airam-dato-on-MqhMij7C_CE-unsplash.jpg" alt="firstImage"></img>
+                        <img src="images/airam-dato-on-MqhMij7C_CE-unsplash.webp" alt="firstImage"></img>
                             <figcaption>
                                 <h3>We are based out of Asheville, North Carolina</h3>
                                 <p>With our roots based in Asheville North Carolina, we saw first hand the effect of tourism and its
@@ -46,7 +46,7 @@ export default function About() {
                             </figcaption>
                     </figure>
                     <figure class="col-sm-4">
-                        <img src="images/emile-perron-xrVDYZRGdw4-unsplash.jpg" alt="firstImage"></img>
+                        <img src="images/emile-perron-xrVDYZRGdw4-unsplash.webp" alt="firstImage"></img>
                             <figcaption>
                                 <h3>We are currently in development of the service!</h3>
                                 <p>Right now we are in the testing phase of the concept and would love your feedback!</p>
