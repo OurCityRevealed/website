@@ -10,7 +10,7 @@ jobs:
     permissions:
       id-token: write
       contents: read
-      
+
     if: github.ref == 'refs/heads/main'
     steps:
 
@@ -24,8 +24,4 @@ jobs:
       - name: Create CodeDeploy Deployment
         id: deploy
         run: |
-          aws deploy create-deployment \
-            --application-name ourcity_website
-            --deployment-group-name ourcity_website_deployment_g \
-            --deployment-config-name CodeDeployDefault.OneAtATime \
-            --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
+          aws deploy create-deployment --application-name ourcity_website --deployment-group-name ourcity_website_deployment_g --deployment-config-name CodeDeployDefault.OneAtATime --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
