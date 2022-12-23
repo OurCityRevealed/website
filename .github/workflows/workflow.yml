@@ -6,12 +6,17 @@ on:
 jobs:
   coninuous-deployment:
     runs-on: ubuntu-latest
+    # These permissions are needed to interact with GitHub's OIDC Token endpoint.
+    permissions:
+      id-token: write
+      contents: read
+      
     if: github.ref == 'refs/heads/main'
     steps:
 
       # Step 1
       - name: configureawscredentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1-node16
         with:
           role-to-assume: arn:aws:iam::001969182821:role/Github_Actions_Role
           aws-region: us-east-1
